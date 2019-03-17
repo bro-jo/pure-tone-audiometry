@@ -65,7 +65,7 @@ class Wrong extends React.Component {
           </Row>
           <ButtonBox className="align-items-end">
             <Col className="col-sm-12 mb-2">
-              <Link href="../">
+              <Link href="/">
                 <Button className="btn-light btn-block">처음으로</Button>
               </Link>
             </Col>
