@@ -7,7 +7,7 @@ import Router from 'next/router';
 const PAN_LEFT_VALUE = -0.9;
 const PAN_RIGHT_VALUE = 0.9;
 const CANDIDATE_FREQUENCIES = [250, 500, 1000, 2000, 4000, 8000];
-const CANDIDATE_GAIN = [0.001, 0.002, 0.003, 0.004, 0.006, 0.01];
+const CANDIDATE_GAIN = [1, 2, 3, 4, 6, 10].map(e => e / 1000 / 3);
 const GAIN_MAX_VALUE = CANDIDATE_GAIN[CANDIDATE_GAIN.length - 1];
 const MAX_STEPS = 20;
 
@@ -65,33 +65,6 @@ class Ta1 extends React.Component {
     }, 300);
   }
 
-  private initAudio() {
-    const W = window as any;
-    this.audioContext = new (W.AudioContext || W.webkitAudioContext)();
-    this.audioContextHistory.push(this.audioContext);
-    this.oscillator = this.audioContext.createOscillator();
-    this.gainNode = this.audioContext.createGain();
-
-    this.oscillator.type = 'sine';
-    this.oscillator.frequency.value = 440;
-
-    if (false && this.audioContext.createStereoPanner) {
-      this.panNode = this.audioContext.createStereoPanner();
-      this.panNode.pan.value = PAN_LEFT_VALUE;
-    } else {
-      this.panNode = this.audioContext.createPanner();
-      this.panNode.panningModel = 'equalpower';
-      this.panNode.setPosition(PAN_LEFT_VALUE < 0 ? -1 : 1, 0, 1 - Math.abs(PAN_LEFT_VALUE < 0 ? -1 : 1));
-    }
-    this.oscillator.connect(this.panNode);
-    this.panNode.connect(this.gainNode);
-
-    this.oscillator.connect(this.gainNode);
-    this.gainNode.connect(this.audioContext.destination);
-    this.gainNode.gain.value = GAIN_MAX_VALUE;
-    console.log('this.gainNode.gain.value', this.gainNode.gain.value);
-  }
-
   componentWillUnmount(): void {
     console.log('componentWillUnmount');
     try {
@@ -139,6 +112,34 @@ class Ta1 extends React.Component {
     }
   }
 
+  private initAudio() {
+    const W = window as any;
+    this.audioContext = new (W.AudioContext || W.webkitAudioContext)();
+    this.audioContextHistory.push(this.audioContext);
+    this.oscillator = this.audioContext.createOscillator();
+    this.gainNode = this.audioContext.createGain();
+
+    this.oscillator.type = 'sine';
+    this.oscillator.frequency.value = 440;
+
+    if (this.audioContext.createStereoPanner) {
+      this.panNode = this.audioContext.createStereoPanner();
+      this.panNode.pan.value = PAN_LEFT_VALUE;
+    } else {
+      this.panNode = this.audioContext.createPanner();
+      this.panNode.panningModel = 'equalpower';
+      this.panNode.setPosition(PAN_LEFT_VALUE < 0 ? -1 : 1, 0, 1 - Math.abs(PAN_LEFT_VALUE < 0 ? -1 : 1));
+    }
+    this.oscillator.connect(this.panNode);
+    this.panNode.connect(this.gainNode);
+    this.gainNode.connect(this.audioContext.destination);
+
+    // this.oscillator.connect(this.gainNode);
+    // this.gainNode.connect(this.audioContext.destination);
+    this.gainNode.gain.value = GAIN_MAX_VALUE;
+    console.log('this.gainNode.gain.value', this.gainNode.gain.value);
+  }
+
   private startAudio() {
     const W = window as any;
     const frequency = this.getRandomFrequency();
@@ -155,7 +156,7 @@ class Ta1 extends React.Component {
     this.oscillator.type = 'sine';
     this.oscillator.frequency.value = frequency;
 
-    if (false && this.audioContext.createStereoPanner) {
+    if (this.audioContext.createStereoPanner) {
       this.panNode = this.audioContext.createStereoPanner();
       this.panNode.pan.value = panValue;
     }
@@ -166,9 +167,10 @@ class Ta1 extends React.Component {
     }
     this.oscillator.connect(this.panNode);
     this.panNode.connect(this.gainNode);
-
-    this.oscillator.connect(this.gainNode);
     this.gainNode.connect(this.audioContext.destination);
+
+    // this.oscillator.connect(this.gainNode);
+    // this.gainNode.connect(this.audioContext.destination);
     this.gainNode.gain.value = volume;
 
     console.log('this.oscillator.frequency.value ', this.oscillator.frequency.value);
@@ -206,7 +208,7 @@ class Ta1 extends React.Component {
                   <tr>
                     <th>#</th>
                     <th>주파수</th>
-                    <th>소리 크기</th>
+                    <th>볼륨</th>
                     <th>방향</th>
                     <th>O/X</th>
                   </tr>
@@ -216,7 +218,7 @@ class Ta1 extends React.Component {
                     <tr>
                       <td>{i}</td>
                       <td>{frequency}</td>
-                      <td>{volume}</td>
+                      <td>{volume ? Math.floor(volume * 1000 * 3) : ''}</td>
                       <td>{pan}</td>
                       <td>{correct ? 'O' : 'X'}</td>
                     </tr>
@@ -333,7 +335,7 @@ class Ta1 extends React.Component {
 
     this.setState((prevState: IState) => ({step: prevState.step + 1}));
     setTimeout(() => this.startAudio(), 1000);
-    setTimeout(() => this.setState({shouldBlockButton: false}), 1500);
+    setTimeout(() => this.setState({shouldBlockButton: false}), 1250);
   }
 
   private finishTest() {
@@ -363,7 +365,7 @@ class Ta1 extends React.Component {
     if (step === 0) {
       this.setState({isSideChanged: false, step: 1, shouldBlockButton: true});
       setTimeout(() => this.startAudio(), 1000);
-      setTimeout(() => this.setState({shouldBlockButton: false}), 1500);
+      setTimeout(() => this.setState({shouldBlockButton: false}), 1250);
       return;
     }
 
@@ -379,7 +381,7 @@ class Ta1 extends React.Component {
     if (step === 0) {
       this.setState({isSideChanged: true, step: 1, shouldBlockButton: true});
       setTimeout(() => this.startAudio(), 1000);
-      setTimeout(() => this.setState({shouldBlockButton: false}), 1500);
+      setTimeout(() => this.setState({shouldBlockButton: false}), 1250);
       return;
     }
 
