@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/guidance3.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -7465,21 +7465,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fguidance3&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fguidance3.tsx!./":
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fguidance3&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fguidance3.tsx ***!
-  \*********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx!./":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx ***!
+  \********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/guidance3", function() {
-      var page = __webpack_require__(/*! ./pages/guidance3.tsx */ "./pages/guidance3.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var page = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/guidance3.tsx */ "./pages/guidance3.tsx", function() {
-          if(!next.router.components["/guidance3"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/guidance3.tsx */ "./pages/guidance3.tsx")
-          next.router.update("/guidance3", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+          next.router.update("/", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -29401,10 +29401,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/guidance3.tsx":
-/*!*****************************!*\
-  !*** ./pages/guidance3.tsx ***!
-  \*****************************/
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29420,15 +29420,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
 /* harmony import */ var _src_components_text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/text */ "./src/components/text.tsx");
 /* harmony import */ var _src_components_box__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/box */ "./src/components/box.tsx");
-/* harmony import */ var _src_components_icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/components/icon */ "./src/components/icon.tsx");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _src_components_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/icon */ "./src/components/icon.tsx");
 
 
 
 
 
-var _jsxFileName = "/Users/bro/project/pure-tone-audiometry/pages/guidance3.tsx";
+var _jsxFileName = "/Users/bro/project/pure-tone-audiometry/pages/index.tsx";
 
 
 
@@ -29436,18 +29436,18 @@ var _jsxFileName = "/Users/bro/project/pure-tone-audiometry/pages/guidance3.tsx"
 
 
 
-var Guidance3 =
+var Index =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Guidance3, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _React$Component);
 
-  function Guidance3() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Guidance3);
+  function Index() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Guidance3).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Guidance3, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -29476,7 +29476,7 @@ function (_React$Component) {
           lineNumber: 15
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_icon__WEBPACK_IMPORTED_MODULE_9__["EarImage"], {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_icon__WEBPACK_IMPORTED_MODULE_10__["EarImage"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
@@ -29501,80 +29501,74 @@ function (_React$Component) {
           lineNumber: 21
         },
         __self: this
-      }, "\uC774\uC81C \uD14C\uC2A4\uD2B8\uB97C", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+      }, "\uC548\uB155\uD558\uC138\uC694", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         },
         __self: this
-      }), "\uC2DC\uC791\uD569\uB2C8\uB2E4", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "text-primary",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
-      }), "\uD14C\uC2A4\uD2B8\uAC00 \uB05D\uB09C \uD6C4", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+      }, "\uAC04\uD3B8"), "\uD558\uAC8C \uD558\uC2E4 \uC218 \uC788\uB294", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }), "\uC628\uB77C\uC778 ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "text-primary",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
-      }), "\uAF2D ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "text-primary",
+      }, "\uCCAD\uB825 \uD14C\uC2A4\uD2B8"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         },
         __self: this
-      }, "\uBCFC\uB968"), "\uC744", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }), "\uB2E4\uC2DC ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "text-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }, "\uB0AE\uCDB0"), "\uC8FC\uC138\uC694"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_8__["ButtonBox"], {
+      }), "\uC785\uB2C8\uB2E4"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_8__["ButtonBox"], {
         className: "align-items-end",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
         className: "col-sm-12 mb-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        href: "/ta1",
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        href: "/guidance1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
         className: "btn-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 32
         },
         __self: this
-      }, "\uD14C\uC2A4\uD2B8 \uC2DC\uC791\uD558\uAE30"))))));
+      }, "\uB2E4\uC74C"))))));
     }
   }]);
 
-  return Guidance3;
+  return Index;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Guidance3);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
@@ -29682,192 +29676,7 @@ function _templateObject() {
 var EarImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var HeadsetImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 var SpeakerImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3());
-var WrongImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4()); //
-// /*
-//   Browser support for Web Audio API:
-//   http://caniuse.com/#feat=audio-api
-//
-//   Fourier Series:
-//   http://en.wikipedia.org/wiki/Fourier_series
-//
-//   Octave:
-//   http://en.wikipedia.org/wiki/Octave
-// */
-// (function() {
-//   var AudioContext;
-//   var audioContext;
-//   var oscillator;
-//   var gainNode;
-//   var analyser;
-//   var isPlaying = false;
-//   var canvas = document.getElementById("theCanvas");
-//   var canvasContext = canvas.getContext("2d");
-//   var dataArray;
-//   var analyserMethod = "getByteTimeDomainData";
-//   var frequencySlider = document.getElementById("frequencySlider");
-//   // Fourier Coefficients used for the custom wave
-//   var first = 33;
-//   var second = 33;
-//   var third = 33;
-//
-//   var canvasWidth = canvas.width;
-//   var canvasHeight = canvas.height;
-//
-//   function initAudio(streamUrl) {
-//     AudioContext = window.AudioContext || window.webkitAudioContext;
-//     audioContext = new AudioContext();
-//     // The oscillator creates the sound waves.
-//     // As you can see on the canvas when drawing
-//     // the square wave, the wave is not perfectly
-//     // square. What you see is the Gibbs phenomenon
-//     // caused by the oscillator using Fourier series
-//     // to approximate the different wave types.
-//     oscillator = audioContext.createOscillator();
-//     oscillator.type = "sine";
-//     // The tone A
-//     // http://en.wikipedia.org/wiki/A440_(pitch_standard)
-//     oscillator.frequency.value = 440;
-//     oscillator.start();
-//     // Controls the volume
-//     gainNode = audioContext.createGain();
-//     gainNode.gain.value = 0;
-//     oscillator.connect(gainNode);
-//     // Provides info about the sound playing
-//     analyser = audioContext.createAnalyser();
-//     gainNode.connect(analyser);
-//     gainNode.connect(audioContext.destination);
-//
-//     // Oscillator -- Gain +-- Out (speaker/phones)
-//     //                    |
-//     //                    +-- Analyser
-//   };
-//
-//   function startDrawing() {
-//     analyser.fftSize = 2048;
-//     var bufferLength = analyser.frequencyBinCount;
-//     dataArray = new Uint8Array(bufferLength);
-//     canvasContext.lineWidth = 1;
-//     canvasContext.strokeStyle = 'rgba(0, 0, 0, 1)';
-//     function drawAgain() {
-//       canvasContext.clearRect(0, 0, canvasWidth, canvasHeight);
-//       requestAnimationFrame(drawAgain);
-//
-//       analyser[analyserMethod](dataArray);
-//       for(var i = 0; i < bufferLength; i++){
-//         canvasContext.beginPath();
-//         canvasContext.moveTo(i, 255);
-//         canvasContext.lineTo(i, 255 - dataArray[i]);
-//         canvasContext.closePath();
-//         canvasContext.stroke();
-//       }
-//     }
-//
-//     drawAgain();
-//   }
-//
-//   var speakerIcon = document.getElementById("speaker");
-//   var toggleLabel = document.getElementById("toggleLabel");
-//
-//   function toggleSound () {
-//     if(isPlaying) {
-//       speakerIcon.classList.remove("fa-volume-off");
-//       speakerIcon.classList.add("fa-volume-up");
-//       gainNode.gain.value = 0;
-//       toggleLabel.innerHTML = "Start!";
-//       isPlaying = false;
-//     } else {
-//       speakerIcon.classList.remove("fa-volume-up");
-//       speakerIcon.classList.add("fa-volume-off");
-//       gainNode.gain.value = 1;
-//       toggleLabel.innerHTML = "Stop!"
-//       isPlaying = true;
-//     }
-//   }
-//
-//   document.getElementById("toggleSound").addEventListener("click",
-//     toggleSound, false);
-//
-//   // Fourier series
-//   function customWave(first, second, third) {
-//     document.getElementById("first").value = first;
-//     document.getElementById("second").value = second;
-//     document.getElementById("third").value = third;
-//     // You could create several oscillator nodes with different
-//     // frequencies and then combine them. But here we use a
-//     // PeriodicWave to combine the first three sin components.
-//     // https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave
-//     var real = new Float32Array(4);
-//     var imag = new Float32Array(4);
-//     // a0 (or DC offset)
-//     real[0] = 0;
-//     imag[0] = 0;
-//
-//     // First term. The frequency, f, set on the oscillator.
-//     // sin
-//     real[1] = first/100;
-//     // cos
-//     imag[1] = 0;
-//
-//     // Second term, f * 2, one octave up.
-//     // sin
-//     real[2] = second/100;
-//     // cos
-//     imag[2] = 0;
-//
-//     // Third term, f * 3, two octaves up.
-//     // sin
-//     real[3] = third/100;
-//     // cos
-//     imag[3] = 0;
-//
-//     var wave = audioContext.createPeriodicWave(real, imag);
-//     // "the browser performs an inverse Fourier transform to
-//     // get a time domain buffer for the frequency of the
-//     // oscillator" -MDN
-//     oscillator.setPeriodicWave(wave);
-//   }
-//
-//   function applyClicked() {
-//     first = parseInt(document.getElementById("first").value);
-//     second = parseInt(document.getElementById("second").value);
-//     third = parseInt(document.getElementById("third").value);
-//     customWave(first, second, third);
-//   }
-//   document.getElementById("applyButton").addEventListener("click",
-//     applyClicked, false);
-//
-//   function waveDropdownClicked (event) {
-//     event = event || window.event;
-//     var target = event.target || event.srcElement;
-//     if(target.nodeName === "A") {
-//       var waveType = target.id;
-//       console.log(waveType);
-//       oscillator.type = waveType;
-//       if(waveType === "custom") {
-//         customWave(first, second, third);
-//       }
-//     }
-//   };
-//
-//   document.getElementById("waveDropdown").addEventListener("click",
-//     waveDropdownClicked, false);
-//
-//   frequencySlider.min = 5;
-//   frequencySlider.max = 10000;
-//   frequencySlider.value = 440;
-//   frequencySlider.step = 1;
-//   frequencySlider.addEventListener("change", function () {
-//     oscillator.frequency.value = this.value;
-//     document.getElementById("frequency").innerHTML = this.value;
-//   });
-//   frequencySlider.addEventListener("mousemove", function () {
-//     oscillator.frequency.value = this.value;
-//     document.getElementById("frequency").innerHTML = this.value;
-//   });
-//
-//   initAudio();
-//   startDrawing();
-// })();
+var WrongImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
 
 /***/ }),
 
@@ -29912,14 +29721,14 @@ var Guidance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_temp
 
 /***/ }),
 
-/***/ 6:
-/*!*************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fguidance3&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fguidance3.tsx ***!
-  \*************************************************************************************************************************************************/
+/***/ 1:
+/*!************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fguidance3&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fguidance3.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fguidance3&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fguidance3.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx!./");
 
 
 /***/ }),
@@ -29935,5 +29744,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=guidance3.js.map
+},[[1,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=index.js.map
