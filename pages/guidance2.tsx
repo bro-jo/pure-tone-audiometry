@@ -29,13 +29,13 @@ class Guidance2 extends React.Component {
             <Col className="col-sm-11 mb-5">
               <Audio controls={true} controlsList="nodownload">
                 Your browser does not support the <code>audio</code> element.
-                <source src="/static/sound/sound_check.mp3" type="audio/mp3" />
+                <source src="../static/sound/sound_check.mp3" type="audio/mp3" />
               </Audio>
             </Col>
           </Row>
           <ButtonBox className="align-items-end">
             <Col className="col-sm-12 mb-2">
-              <Link href="/guidance3">
+              <Link href="../guidance3">
                 <Button className="btn-block">네, 들립니다</Button>
               </Link>
             </Col>

@@ -5,7 +5,7 @@ export const DrillCircleImage = styled.div`
   width: 64px;
   height: 64px;
   margin: 6px;
-  background-image: url("/static/image/drill.png");
+  background-image: url("../static/image/drill.png");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 42px; 
@@ -26,7 +26,7 @@ export const CatCircleImage = styled.div`
   width: 64px;
   height: 64px;
   margin: 6px;
-  background-image: url("/static/image/cat.png");
+  background-image: url("../static/image/cat.png");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 42px; 
@@ -47,7 +47,7 @@ export const EmployeeCircleImage = styled.div`
   width: 64px;
   height: 64px;
   margin: 6px;
-  background-image: url("/static/image/employee.png");
+  background-image: url("../static/image/employee.png");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 42px; 

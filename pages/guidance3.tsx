@@ -29,7 +29,7 @@ class Guidance3 extends React.Component {
           </Row>
           <ButtonBox className="align-items-end">
             <Col className="col-sm-12 mb-2">
-              <Link href="/ta1">
+              <Link href="../ta1">
                 <Button className="btn-block">테스트 시작하기</Button>
               </Link>
             </Col>
