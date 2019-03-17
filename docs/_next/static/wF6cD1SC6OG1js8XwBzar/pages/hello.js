@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{uEiV:function(n,u,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/hello",function(){var n=e("uXoR");return{page:n.default||n}}])},uXoR:function(n,u,e){"use strict";e.r(u);var o=e("q1tI"),t=e.n(o);u.default=function(){return t.a.createElement("div",null,"hello")}}},[["uEiV",1,0]]]);

@@ -38,7 +38,7 @@ class Ta1 extends React.Component {
   private audioContext: AudioContext;
   private oscillator: OscillatorNode;
   private gainNode: GainNode;
-  private panNode: StereoPannerNode | PannerNode;
+  private panNode: any;
   private audioContextHistory: AudioContext[] = [];
 
   state: IState = {
@@ -75,12 +75,13 @@ class Ta1 extends React.Component {
     this.oscillator.type = 'sine';
     this.oscillator.frequency.value = 440;
 
-    if (this.audioContext.createStereoPanner) {
+    if (false && this.audioContext.createStereoPanner) {
       this.panNode = this.audioContext.createStereoPanner();
       this.panNode.pan.value = PAN_LEFT_VALUE;
     } else {
       this.panNode = this.audioContext.createPanner();
-      this.panNode.setPosition(PAN_LEFT_VALUE < 0 ? -1 : 1, 0, 0);
+      this.panNode.panningModel = 'equalpower';
+      this.panNode.setPosition(PAN_LEFT_VALUE < 0 ? -1 : 1, 0, 1 - Math.abs(PAN_LEFT_VALUE < 0 ? -1 : 1));
     }
     this.oscillator.connect(this.panNode);
     this.panNode.connect(this.gainNode);
@@ -154,13 +155,14 @@ class Ta1 extends React.Component {
     this.oscillator.type = 'sine';
     this.oscillator.frequency.value = frequency;
 
-    if (this.audioContext.createStereoPanner) {
+    if (false && this.audioContext.createStereoPanner) {
       this.panNode = this.audioContext.createStereoPanner();
       this.panNode.pan.value = panValue;
     }
     else {
       this.panNode = this.audioContext.createPanner();
-      this.panNode.setPosition(panValue < 0 ? -1 : 1, 0, 0);
+      this.panNode.panningModel = 'equalpower';
+      this.panNode.setPosition(panValue < 0 ? -1 : 1, 0, 1 - Math.abs(panValue < 0 ? -1 : 1));
     }
     this.oscillator.connect(this.panNode);
     this.panNode.connect(this.gainNode);
