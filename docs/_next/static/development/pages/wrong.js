@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/wrong.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -425,6 +425,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -7465,21 +7495,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx!./":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwrong&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fwrong.tsx!./":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwrong&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fwrong.tsx ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/wrong", function() {
+      var page = __webpack_require__(/*! ./pages/wrong.tsx */ "./pages/wrong.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/wrong.tsx */ "./pages/wrong.tsx", function() {
+          if(!next.router.components["/wrong"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/wrong.tsx */ "./pages/wrong.tsx")
+          next.router.update("/wrong", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -29401,9 +29431,9 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
+/***/ "./pages/wrong.tsx":
 /*!*************************!*\
-  !*** ./pages/index.tsx ***!
+  !*** ./pages/wrong.tsx ***!
   \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -29414,161 +29444,178 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var _src_components_text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/text */ "./src/components/text.tsx");
-/* harmony import */ var _src_components_box__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/box */ "./src/components/box.tsx");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _src_components_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/icon */ "./src/components/icon.tsx");
-
-
-
-
-
-var _jsxFileName = "/Users/bro/project/pure-tone-audiometry/pages/index.tsx";
-
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var _src_components_text__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/components/text */ "./src/components/text.tsx");
+/* harmony import */ var _src_components_box__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/box */ "./src/components/box.tsx");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _src_components_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../src/components/icon */ "./src/components/icon.tsx");
 
 
 
 
 
 
-var Index =
+
+var _jsxFileName = "/Users/bro/project/pure-tone-audiometry/pages/wrong.tsx";
+
+
+
+
+
+
+
+var SoundObject;
+
+(function (SoundObject) {
+  SoundObject["DRILL"] = "DRILL";
+  SoundObject["CAT"] = "CAT";
+  SoundObject["EMPLOYEE"] = "EMPLOYEE";
+})(SoundObject || (SoundObject = {}));
+
+var Wrong =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Wrong, _React$Component);
 
-  function Index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+  function Wrong() {
+    var _getPrototypeOf2;
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Wrong);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Wrong)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      soundObject: undefined,
+      soundFilePath: '',
+      msg: ''
+    });
+
+    return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Wrong, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var randomNumber = Math.random();
+      var soundObject = randomNumber > 0.66 ? SoundObject.DRILL : randomNumber > 0.33 ? SoundObject.CAT : SoundObject.EMPLOYEE;
+      var soundFilePath = soundObject === SoundObject.DRILL ? '/static/sound/speech_drill.mp3' : soundObject === SoundObject.CAT ? '/static/sound/speech_cat.mp3' : soundObject === SoundObject.EMPLOYEE ? '/static/sound/speech_employee.mp3' : '';
+      var msg = next_router__WEBPACK_IMPORTED_MODULE_12___default.a.query['msg'];
+      this.setState({
+        soundObject: soundObject,
+        soundFilePath: soundFilePath,
+        msg: msg
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 52
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_8__["CustomContainer"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_10__["CustomContainer"], {
         className: "my-3 p-3 bg-white",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 53
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Row"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 54
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         className: "col-sm-12 my-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 55
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_icon__WEBPACK_IMPORTED_MODULE_10__["EarImage"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_src_components_icon__WEBPACK_IMPORTED_MODULE_13__["WrongImage"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 56
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Row"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 59
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         className: "col-sm-12 mb-5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 60
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_text__WEBPACK_IMPORTED_MODULE_7__["Title"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_src_components_text__WEBPACK_IMPORTED_MODULE_9__["Title"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 61
         },
         __self: this
-      }, "\uC548\uB155\uD558\uC138\uC694", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+      }, this.state.msg || '오답입니다', react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 62
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "text-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
-      }, "\uAC04\uD3B8"), "\uD558\uAC8C \uD558\uC2E4 \uC218 \uC788\uB294", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
-      }), "\uC628\uB77C\uC778 ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "text-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
-      }, "\uCCAD\uB825 \uD14C\uC2A4\uD2B8"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }), "\uC785\uB2C8\uB2E4"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_8__["ButtonBox"], {
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_src_components_box__WEBPACK_IMPORTED_MODULE_10__["ButtonBox"], {
         className: "align-items-end",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 66
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         className: "col-sm-12 mb-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 67
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        href: "/guidance1",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 68
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Button"], {
-        className: "btn-block",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Button"], {
+        className: "btn-light btn-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 69
         },
         __self: this
-      }, "\uB2E4\uC74C"))))));
+      }, "\uCC98\uC74C\uC73C\uB85C"))))));
     }
   }]);
 
-  return Index;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+  return Wrong;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Wrong);
 
 /***/ }),
 
@@ -29721,14 +29768,14 @@ var Guidance = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p(_temp
 
 /***/ }),
 
-/***/ 2:
-/*!************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx ***!
-  \************************************************************************************************************************************/
+/***/ 4:
+/*!*****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fwrong&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fwrong.tsx ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwrong&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fwrong.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwrong&absolutePagePath=%2FUsers%2Fbro%2Fproject%2Fpure-tone-audiometry%2Fpages%2Fwrong.tsx!./");
 
 
 /***/ }),
@@ -29744,5 +29791,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[4,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=wrong.js.map

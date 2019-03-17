@@ -38,7 +38,7 @@ class Ta1 extends React.Component {
   private audioContext: AudioContext;
   private oscillator: OscillatorNode;
   private gainNode: GainNode;
-  private panNode: StereoPannerNode;
+  private panNode: StereoPannerNode | PannerNode;
   private audioContextHistory: AudioContext[] = [];
 
   state: IState = {
@@ -71,14 +71,19 @@ class Ta1 extends React.Component {
     this.audioContextHistory.push(this.audioContext);
     this.oscillator = this.audioContext.createOscillator();
     this.gainNode = this.audioContext.createGain();
-    this.panNode = this.audioContext.createStereoPanner();
 
     this.oscillator.type = 'sine';
     this.oscillator.frequency.value = 440;
 
+    if (this.audioContext.createStereoPanner) {
+      this.panNode = this.audioContext.createStereoPanner();
+      this.panNode.pan.value = PAN_LEFT_VALUE;
+    } else {
+      this.panNode = this.audioContext.createPanner();
+      this.panNode.setPosition(PAN_LEFT_VALUE < 0 ? -1 : 1, 0, 0);
+    }
     this.oscillator.connect(this.panNode);
     this.panNode.connect(this.gainNode);
-    this.panNode.pan.value = PAN_LEFT_VALUE;
 
     this.oscillator.connect(this.gainNode);
     this.gainNode.connect(this.audioContext.destination);
@@ -145,21 +150,27 @@ class Ta1 extends React.Component {
     this.audioContextHistory.push(this.audioContext);
     this.oscillator = this.audioContext.createOscillator();
     this.gainNode = this.audioContext.createGain();
-    this.panNode = this.audioContext.createStereoPanner();
 
     this.oscillator.type = 'sine';
     this.oscillator.frequency.value = frequency;
 
+    if (this.audioContext.createStereoPanner) {
+      this.panNode = this.audioContext.createStereoPanner();
+      this.panNode.pan.value = panValue;
+    }
+    else {
+      this.panNode = this.audioContext.createPanner();
+      this.panNode.setPosition(panValue < 0 ? -1 : 1, 0, 0);
+    }
     this.oscillator.connect(this.panNode);
     this.panNode.connect(this.gainNode);
-    this.panNode.pan.value = panValue;
 
     this.oscillator.connect(this.gainNode);
     this.gainNode.connect(this.audioContext.destination);
     this.gainNode.gain.value = volume;
 
     console.log('this.oscillator.frequency.value ', this.oscillator.frequency.value);
-    console.log('this.panNode.pan.value', this.panNode.pan.value);
+    console.log('panValue', panValue);
     console.log('this.gainNode.gain.value', this.gainNode.gain.value);
 
     this.oscillator.start();

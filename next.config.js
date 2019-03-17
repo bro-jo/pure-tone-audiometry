@@ -4,5 +4,6 @@ module.exports = withTypescript({
   webpack(config, options) {
     return config;
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 });
 
