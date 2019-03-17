@@ -22,7 +22,8 @@ class Guidance3 extends React.Component {
                 이제 테스트를<br />
                 시작합니다<br />
                 테스트가 끝난 후<br />
-                꼭 <span className="text-primary">볼륨을 다시 낮춰주세요</span>
+                꼭 <span className="text-primary">볼륨</span>을<br />
+                다시 <span className="text-primary">낮춰</span>주세요
               </Title>
             </Col>
           </Row>

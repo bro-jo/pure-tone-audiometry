@@ -9,7 +9,7 @@ const PAN_RIGHT_VALUE = 0.9;
 const CANDIDATE_FREQUENCIES = [250, 500, 1000, 2000, 4000, 8000];
 const CANDIDATE_GAIN = [0.001, 0.002, 0.003, 0.004, 0.006, 0.01];
 const GAIN_MAX_VALUE = CANDIDATE_GAIN[CANDIDATE_GAIN.length - 1];
-const MAX_STEPS = 5;
+const MAX_STEPS = 20;
 
 enum Pan {
   Left = 'Left',
@@ -181,6 +181,8 @@ class Ta1 extends React.Component {
                 <Title>
                   검사가<br />
                   <span className="text-primary">종료</span>되었습니다.<br />
+                  꼭 <span className="text-primary">볼륨</span>을<br />
+                  다시 <span className="text-primary">낮춰</span>주세요
                 </Title>
               </Col>
             </Row>
@@ -211,7 +213,7 @@ class Ta1 extends React.Component {
 
                 <Alert variant={percent >= 90 ? 'success' : percent >= 80 ? 'warning' : 'danger'}>
                   {correctCount}개 맞추셨네요.&nbsp;
-                  {percent > 90 ? '정상' : percent > 80 ? '주의' : '위험'} 단계 입니다.
+                  {percent >= 90 ? '정상' : percent >= 80 ? '주의' : '위험'} 단계 입니다.
                 </Alert>
 
                 <Row className="justify-content-end">
@@ -219,6 +221,10 @@ class Ta1 extends React.Component {
                     <Guidance className="ml-3 mt-5">
                       * 간단한 청력 테스트에 도움을 주는 보조 테스트이며,
                       전문적인 <span className="text-primary">의료행위를 대체할 수 없습니다.</span>
+                    </Guidance>
+                    <Guidance className="ml-3 mt-2">
+                      * 검사 종료 후 <span className="text-primary">기기의 볼륨</span>을
+                      다시 <span className="text-primary">낮춰주세요.</span>
                     </Guidance>
                   </Col>
                 </Row>
